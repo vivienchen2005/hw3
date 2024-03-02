@@ -67,8 +67,10 @@ void dealloc(Node* head)
 //   function object struct declarations
 // -----------------------------------------------
 
-
-
+//functor that returns true/remove if odd
+bool pred(int value) {
+    return value % 2 != 0;
+}
 
 
 int main(int argc, char* argv[])
@@ -86,10 +88,10 @@ int main(int argc, char* argv[])
     print(head);
 
     // Test out your linked list code
+    Node* new_head = llfilter(head, pred);
+    cout << "New list: ";
+    print(new_head);
 
-
-
-    
     return 0;
 
 }

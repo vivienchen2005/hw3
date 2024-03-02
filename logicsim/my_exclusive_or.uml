@@ -13,20 +13,26 @@ W0 is low
 
 W1 is low
 
-@4
-W0 is high
-
-@6
-W1 is high
-
 @0
 W6 is low
 
 @4
+W0 is high
+
+@4
 W6 is high
+
+@6
+W1 is high
+
+@6
+W6 is low
 
 @8
 W0 is low
+
+@8
+W6 is high
 
 @enduml
 
